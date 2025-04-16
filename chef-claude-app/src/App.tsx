@@ -1,7 +1,10 @@
+import Header from "./components/HeaderComponent"
+
 function App() {
 
   return (
     <>
+      <Header/>
     </>
   )
 }
