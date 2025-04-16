@@ -1,10 +1,12 @@
 import Header from "./components/HeaderComponent"
+import Main from "./components/MainComponent"
 
 function App() {
 
   return (
     <>
-      <Header/>
+      <Header />
+      <Main/>
     </>
   )
 }
