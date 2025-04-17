@@ -31,8 +31,8 @@ A React-based web application that leverages Hugging Face's AI models to provide
 1. Clone the repository:
 
 ```bash
-git clone <your-repository-url>
-cd chef-claude-app
+git clone https://github.com/Eihab4/chef-recipe-app.git
+cd chef-recipe-app
 ```
 
 2. Install dependencies:
@@ -73,7 +73,7 @@ The production build will be available in the `dist` directory.
 ## Project Structure
 
 ```
-chef-claude-app/
+chef-recipe-app/
 ├── src/              # Source files
 ├── public/           # Static assets
 ├── node_modules/     # Dependencies
