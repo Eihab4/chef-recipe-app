@@ -4,7 +4,6 @@ interface IClaudeProps{
     recipe:string
 }
 export function Claude(props: IClaudeProps) {
-    console.log(props)
     return (
         <>
             <section style={{ marginTop: "20px", padding: "15px", backgroundColor: "#f9f9f9", borderRadius: "8px", boxShadow: "0 2px 4px rgba(0,0,0,0.1)" }}>
