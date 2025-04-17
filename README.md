@@ -45,7 +45,7 @@ npm install
    Create a `.env` file in the root directory:
 
 ```env
-VITE_HUGGINGFACE_API_KEY=your_huggingface_api_key
+VITE_API_KEY=your_huggingface_api_key
 ```
 
 To obtain your Hugging Face API key:
