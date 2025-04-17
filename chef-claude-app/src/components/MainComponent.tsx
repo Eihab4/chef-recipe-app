@@ -1,11 +1,10 @@
 import { useState } from "react";
+import { IngredientsList } from "./IngredientsListComponent";
 
 export default function Main() {
 
     const [ingredients, setAddIngredient] = useState<string[]>([])
-    const ingredientsList = ingredients.map((i, index) => 
-        i !== "" && <li key={index}>{i}</li>
-    );
+    
     function addIngredient(formData:FormData) {
         const newIngredient = formData.get("ingredient");
         if (typeof newIngredient === "string") {
@@ -24,20 +23,7 @@ export default function Main() {
                     />
                     <button >+ Add Ingredient</button>
                 </form>
-               {ingredientsList.length>0 && <section>
-                    <h2>Our Recipe Ingredient </h2>
-                    <ul className="ingredient-list">
-                        {ingredientsList}
-                    </ul>
-                    {ingredients.length>4 && <div className="get-recipe-container">
-                        <div>
-                            <h3>Let's have some food</h3>
-                            <p>we are generating your recipe</p>
-                        </div>
-                        <button>generate recipe</button>
-                    </div>}
-
-                </section>}
+                <IngredientsList ingredients={ ingredients} />
             </main>
         </>
     )
