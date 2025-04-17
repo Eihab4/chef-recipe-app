@@ -1,72 +1,63 @@
-# Chef AI App
+# Chef AI
 
-A modern web application that leverages AI to provide culinary assistance and recipe recommendations. Built with React, TypeScript, and integrated with Hugging Face AI models.
+A React-based web application that leverages Hugging Face's AI models to provide intelligent culinary assistance. The application offers recipe suggestions, modifications, and real-time cooking guidance through an interactive interface.
 
-## Features
+## Core Features
 
-- AI-powered recipe suggestions and modifications
-- Interactive chat interface for culinary queries
-- Real-time recipe generation and adaptation
-- Modern, responsive UI design
-- Type-safe development with TypeScript
+- Dynamic recipe generation based on available ingredients
+- Recipe modification for dietary restrictions
+- Real-time cooking assistance
+- Interactive recipe exploration
+- Step-by-step cooking guidance
 
 ## Tech Stack
 
-- **Frontend**: React 19, TypeScript
-- **Build Tool**: Vite
-- **AI Integration**:
-  - Hugging Face Inference API
-- **Styling**: Modern CSS
-- **Markdown Support**: React Markdown
+- React 19 with TypeScript
+- Vite for build and development
+- Hugging Face Inference API
+- React Markdown for content rendering
+- Modern CSS for styling
 
-## Prerequisites
+## Development Setup
 
-- Node.js (v18 or higher)
+### Prerequisites
+
+- Node.js v18+
 - npm or yarn
-- API key for Hugging Face
+- Hugging Face API key
 
-## Getting Started
+### Installation
 
-### 1. Clone the Repository
+1. Clone the repository:
 
 ```bash
 git clone <your-repository-url>
 cd chef-claude-app
 ```
 
-### 2. Install Dependencies
+2. Install dependencies:
 
 ```bash
 npm install
-# or
-yarn install
 ```
 
-### 3. Set Up Environment Variables
-
-Create a `.env` file in the root directory with the following variable:
+3. Configure environment:
+   Create a `.env` file in the root directory:
 
 ```env
 VITE_HUGGINGFACE_API_KEY=your_huggingface_api_key
 ```
 
-### 4. Obtaining API Key
+To obtain your Hugging Face API key:
 
-#### Hugging Face API Key
+1. Create an account at [Hugging Face](https://huggingface.co/)
+2. Navigate to Settings > Access Tokens
+3. Generate a new token with appropriate permissions
 
-1. Go to [Hugging Face](https://huggingface.co/)
-2. Create an account or log in
-3. Click on your profile picture and select "Settings"
-4. Navigate to "Access Tokens"
-5. Create a new token with appropriate permissions
-6. Copy the token and paste it in your `.env` file
-
-### 5. Running the Development Server
+4. Start the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
 ```
 
 The application will be available at `http://localhost:5173`
@@ -75,11 +66,9 @@ The application will be available at `http://localhost:5173`
 
 ```bash
 npm run build
-# or
-yarn build
 ```
 
-The built files will be in the `dist` directory.
+The production build will be available in the `dist` directory.
 
 ## Project Structure
 
@@ -96,20 +85,6 @@ chef-claude-app/
 ## Contributing
 
 1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Support
-
-For support, please open an issue in the GitHub repository or contact the maintainers.
-
-## Acknowledgments
-
-- Hugging Face for their inference API
-- The React and TypeScript communities
+2. Create a feature branch
+3. Implement your changes
+4. Submit a pull request
